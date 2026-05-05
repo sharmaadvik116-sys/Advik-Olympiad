@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Advik's Science and Math Olympiad Prep Site</title>
+<title>Advik Olympiad Prep</title>
 
 <style>
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     background: linear-gradient(to right, #fff7ed, #fde68a);
 }
 
@@ -29,6 +29,30 @@ body {
     cursor: pointer;
 }
 
+/* DROPDOWN */
+.dropdown { position: relative; }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #2d3748;
+    min-width: 200px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: #93c5fd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* PAGES */
+.page { display: none; }
+.page.active { display: block; }
+
 /* MAIN */
 .main {
     display: flex;
@@ -36,11 +60,6 @@ body {
 }
 
 .left { width: 50%; }
-
-.left h1 {
-    color: #2563eb;
-    font-size: 42px;
-}
 
 .right {
     width: 50%;
@@ -59,26 +78,13 @@ body {
     display: flex;
     gap: 20px;
     margin-top: 20px;
-    flex-wrap: wrap;
 }
 
 .card {
     background: white;
-    border-radius: 15px;
     padding: 15px;
+    border-radius: 15px;
     width: 250px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px;
-    background: #2563eb;
-    color: white;
-    border-radius: 8px;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 /* TOPICS */
@@ -88,8 +94,8 @@ body {
 
 .topic-grid {
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .topic-card {
@@ -97,27 +103,23 @@ body {
     padding: 20px;
     border-radius: 15px;
     width: 250px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 .topic-card a {
     display: block;
-    margin-top: 8px;
-    text-decoration: none;
+    margin-top: 5px;
     color: #2563eb;
 }
 
-h2 {
-    color: #1e40af;
-}
-
-/* hide pages */
-.page {
-    display: none;
-}
-
-.page.active {
-    display: block;
+/* BUTTON */
+.btn {
+    margin-top: 20px;
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
 }
 
 </style>
@@ -127,8 +129,32 @@ h2 {
 
 <!-- NAVBAR -->
 <div class="navbar">
-    <a onclick="showPage('home')">Home</a>
-    <a onclick="showPage('topics')">Practice Topics</a>
+
+<a onclick="showPage('home')">Home</a>
+<a onclick="showPage('topics')">Practice Topics</a>
+
+<div class="dropdown">
+<a>Science ▼</a>
+<div class="dropdown-content">
+<a href="https://scioly.org/wiki/index.php/Biology" target="_blank">Biology</a>
+<a href="https://scioly.org/wiki/index.php/Chemistry" target="_blank">Chemistry</a>
+</div>
+</div>
+
+<div class="dropdown">
+<a>Math ▼</a>
+<div class="dropdown-content">
+<a href="https://www.khanacademy.org/math" target="_blank">Khan Academy</a>
+</div>
+</div>
+
+<div class="dropdown">
+<a>Reasoning ▼</a>
+<div class="dropdown-content">
+<a href="https://quizlet.com" target="_blank">Practice</a>
+</div>
+</div>
+
 </div>
 
 <!-- ================= PAGE 1 ================= -->
@@ -141,35 +167,33 @@ h2 {
 
 <p>
 Practice and prepare for Science Olympiad, Math Olympiad, and Logical Reasoning competitions.
-Explore curated resources and build confidence.
 </p>
 
 <div class="cards">
 
 <div class="card">
-<h3>Fun Science Videos 🔬</h3>
-<a class="btn" href="https://www.youtube.com/ScienceOlympiadTV" target="_blank">Watch ▶</a>
+<h3>Fun Science Videos</h3>
+<a href="https://www.youtube.com/ScienceOlympiadTV" target="_blank">Watch ▶</a>
 </div>
 
 <div class="card">
-<h3>Cool Science Facts 🚀</h3>
-<a class="btn" href="https://quizlet.com/search?query=science%20olympiad&type=sets" target="_blank">Practice ▶</a>
+<h3>Cool Science Facts</h3>
+<a href="https://quizlet.com" target="_blank">Practice ▶</a>
 </div>
 
 <div class="card">
-<h3>SciOly Practice 🧠</h3>
-<a class="btn" href="https://scioly.org/tests/" target="_blank">Tests ▶</a>
+<h3>SciOly Practice</h3>
+<a href="https://scioly.org/tests/" target="_blank">Tests ▶</a>
 </div>
 
 </div>
 
-<br><br>
-<a class="btn" onclick="showPage('topics')">Go to Practice Topics ▶</a>
+<div class="btn" onclick="showPage('topics')">Go to Practice Topics ▶</div>
 
 </div>
 
 <div class="right">
-<img src="advik.jpg" alt="Advik Olympiad">
+<img src="advik.jpg">
 </div>
 
 </div>
@@ -181,58 +205,36 @@ Explore curated resources and build confidence.
 
 <div class="container">
 
-<h2>🚀 Science Bowl Topics Practice</h2>
+<div class="btn" onclick="showPage('home')">⬅ Back to Home</div>
+
+<h2>Science Bowl Topics</h2>
 
 <div class="topic-grid">
-
 <div class="topic-card"><h3>Biology</h3><a href="https://scioly.org/wiki/index.php/Biology" target="_blank">Study</a></div>
-
 <div class="topic-card"><h3>Chemistry</h3><a href="https://scioly.org/wiki/index.php/Chemistry" target="_blank">Study</a></div>
-
 <div class="topic-card"><h3>Physics</h3><a href="https://scioly.org/wiki/index.php/Physics" target="_blank">Study</a></div>
-
-<div class="topic-card"><h3>Earth Science</h3><a href="https://scioly.org/wiki/index.php/Earth_science" target="_blank">Study</a></div>
-
 </div>
 
-<br>
-
-<h2>🧠 Division B Science Olympiad Events</h2>
+<h2>Division B Events</h2>
 
 <div class="topic-grid">
 
-<div class="topic-card"><h3>Anatomy</h3><a href="#">Study</a><a href="#">Tests</a></div>
-<div class="topic-card"><h3>Boomilever</h3><a href="#">Study</a><a href="#">Tests</a></div>
-<div class="topic-card"><h3>Circuit Lab</h3><a href="#">Study</a><a href="#">Tests</a></div>
-<div class="topic-card"><h3>Codebusters</h3><a href="#">Study</a><a href="#">Tests</a></div>
-<div class="topic-card"><h3>Crime Busters</h3><a href="#">Study</a><a href="#">Tests</a></div>
-
-<div class="topic-card"><h3>Disease Detectives</h3><a href="#">Study</a><a href="#">Tests</a></div>
-<div class="topic-card"><h3>Dynamic Planet</h3><a href="#">Study</a><a href="#">Tests</a></div>
-<div class="topic-card"><h3>Entomology</h3><a href="#">Study</a><a href="#">Tests</a></div>
-<div class="topic-card"><h3>Experimental Design</h3><a href="#">Study</a><a href="#">Tests</a></div>
-<div class="topic-card"><h3>Helicopter</h3><a href="#">Study</a><a href="#">Tests</a></div>
-
-<div class="topic-card"><h3>Heredity</h3><a href="#">Study</a><a href="#">Tests</a></div>
-<div class="topic-card"><h3>Hovercraft</h3><a href="#">Study</a><a href="#">Tests</a></div>
-<div class="topic-card"><h3>Machines</h3><a href="#">Study</a><a href="#">Tests</a></div>
-<div class="topic-card"><h3>Meteorology</h3><a href="#">Study</a><a href="#">Tests</a></div>
-<div class="topic-card"><h3>Metric Mastery</h3><a href="#">Study</a><a href="#">Tests</a></div>
-
-<div class="topic-card"><h3>Mission Possible</h3><a href="#">Study</a><a href="#">Tests</a></div>
-<div class="topic-card"><h3>Potions & Poisons</h3><a href="#">Study</a><a href="#">Tests</a></div>
-<div class="topic-card"><h3>Remote Sensing</h3><a href="#">Study</a><a href="#">Tests</a></div>
-<div class="topic-card"><h3>Rocks & Minerals</h3><a href="#">Study</a><a href="#">Tests</a></div>
-<div class="topic-card"><h3>Scrambler</h3><a href="#">Study</a><a href="#">Tests</a></div>
-
-<div class="topic-card"><h3>Solar System</h3><a href="#">Study</a><a href="#">Tests</a></div>
-<div class="topic-card"><h3>Water Quality</h3><a href="#">Study</a><a href="#">Tests</a></div>
-<div class="topic-card"><h3>Write It Do It</h3><a href="#">Study</a><a href="#">Tests</a></div>
-
+<div class="topic-card"><h3>Anatomy</h3>
+<a href="https://scioly.org/wiki/index.php/Anatomy" target="_blank">Study</a>
+<a href="https://scioly.org/tests/" target="_blank">Tests</a>
 </div>
 
-<br><br>
-<a class="btn" onclick="showPage('home')">⬅ Back to Home</a>
+<div class="topic-card"><h3>Boomilever</h3>
+<a href="https://scioly.org/wiki/index.php/Boomilever" target="_blank">Study</a>
+<a href="https://scioly.org/tests/" target="_blank">Tests</a>
+</div>
+
+<div class="topic-card"><h3>Circuit Lab</h3>
+<a href="https://scioly.org/wiki/index.php/Circuit_Lab" target="_blank">Study</a>
+<a href="https://scioly.org/tests/" target="_blank">Tests</a>
+</div>
+
+</div>
 
 </div>
 
@@ -240,9 +242,9 @@ Explore curated resources and build confidence.
 
 <!-- JS -->
 <script>
-function showPage(pageId) {
+function showPage(id) {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.getElementById(pageId).classList.add('active');
+    document.getElementById(id).classList.add('active');
     window.scrollTo(0,0);
 }
 </script>
