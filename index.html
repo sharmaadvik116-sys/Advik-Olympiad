@@ -7,6 +7,7 @@
 <title>Advik's Science and Math Olympiad Prep Site</title>
 
 <style>
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -38,7 +39,6 @@ body {
     min-width: 220px;
     border-radius: 8px;
     top: 100%;
-    z-index: 999;
 }
 
 .dropdown-content a {
@@ -64,21 +64,13 @@ body {
 
 .left { width: 50%; }
 
-.left h1 {
-    color: #2563eb;
-    font-size: 42px;
-}
-
-.right {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-}
+.right { width: 50%; display:flex; justify-content:flex-end; }
 
 .right img {
     width: 100%;
     max-width: 600px;
     border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
 }
 
 /* CARDS */
@@ -93,17 +85,7 @@ body {
     padding: 15px;
     border-radius: 12px;
     width: 250px;
-}
-
-/* BUTTON */
-.btn {
-    margin-top: 20px;
-    padding: 10px 15px;
-    background: #2563eb;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-    display: inline-block;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 /* TOPICS */
@@ -122,11 +104,22 @@ body {
     padding: 15px;
     border-radius: 12px;
     width: 250px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-/* PAGES */
+/* PAGE */
 .page { display: none; }
 .page.active { display: block; }
+
+.btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
 
 </style>
 </head>
@@ -168,32 +161,33 @@ body {
 <div class="left">
 <h1>Welcome to Advik's Science and Math Olympiad Prep Site</h1>
 
-<p>Practice and prepare for Science Olympiad, Math Olympiad, and Logical Reasoning competitions.</p>
+<p>Practice and prepare for Olympiad competitions.</p>
 
 <div class="cards">
 
 <div class="card">
-<h3>Fun Science Videos 🔬</h3>
-<a href="https://www.youtube.com/ScienceOlympiadTV" target="_blank">Watch ▶</a>
+<h3>Fun Science Videos</h3>
+<a href="https://www.youtube.com/ScienceOlympiadTV" target="_blank">Watch</a>
 </div>
 
 <div class="card">
-<h3>Cool Science Facts 🚀</h3>
-<a href="https://quizlet.com/search?query=science%20olympiad&type=sets" target="_blank">Practice ▶</a>
+<h3>Cool Science Facts</h3>
+<a href="https://quizlet.com/search?query=science%20olympiad&type=sets" target="_blank">Practice</a>
 </div>
 
 <div class="card">
-<h3>SciOly Practice 🧠</h3>
-<a href="https://scioly.org/tests/" target="_blank">Tests ▶</a>
+<h3>SciOly Practice</h3>
+<a href="https://scioly.org/tests/" target="_blank">Tests</a>
 </div>
 
 </div>
 
 <div class="btn" onclick="showPage(2)">Go to Practice Topics ➜</div>
+
 </div>
 
 <div class="right">
-<img src="advik.jpg" alt="Advik Photo">
+<img src="advik.jpg">
 </div>
 
 </div>
@@ -211,14 +205,44 @@ body {
 <div class="topic-card"><h3>Chemistry</h3><a href="https://scioly.org/wiki/index.php/Chemistry" target="_blank">Study</a></div>
 <div class="topic-card"><h3>Physics</h3><a href="https://scioly.org/wiki/index.php/Physics" target="_blank">Study</a></div>
 <div class="topic-card"><h3>Earth Science</h3><a href="https://scioly.org/wiki/index.php/Earth_science" target="_blank">Study</a></div>
+
+<div class="topic-card">
+<h3>Math Practice</h3>
+<a href="https://www.khanacademy.org/math" target="_blank">Khan Academy</a>
+<a href="https://www.ixl.com/math/" target="_blank">IXL</a>
+<a href="https://quizlet.com/search?query=math%20olympiad&type=sets" target="_blank">Quizlet</a>
+</div>
 </div>
 
 <h2>🧠 Division B Events</h2>
 
 <div class="topic-grid">
+
 <div class="topic-card"><h3>Anatomy</h3><a href="https://scioly.org/wiki/index.php/Anatomy" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
 <div class="topic-card"><h3>Boomilever</h3><a href="https://scioly.org/wiki/index.php/Boomilever" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
 <div class="topic-card"><h3>Circuit Lab</h3><a href="https://scioly.org/wiki/index.php/Circuit_Lab" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+
+<div class="topic-card"><h3>Codebusters</h3><a href="https://scioly.org/wiki/index.php/Codebusters" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+<div class="topic-card"><h3>Crime Busters</h3><a href="https://scioly.org/wiki/index.php/Crime_Busters" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+<div class="topic-card"><h3>Disease Detectives</h3><a href="https://scioly.org/wiki/index.php/Disease_Detectives" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+<div class="topic-card"><h3>Dynamic Planet</h3><a href="https://scioly.org/wiki/index.php/Dynamic_Planet" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+<div class="topic-card"><h3>Entomology</h3><a href="https://scioly.org/wiki/index.php/Entomology" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+<div class="topic-card"><h3>Experimental Design</h3><a href="https://scioly.org/wiki/index.php/Experimental_Design" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+<div class="topic-card"><h3>Helicopter</h3><a href="https://scioly.org/wiki/index.php/Helicopter" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+<div class="topic-card"><h3>Heredity</h3><a href="https://scioly.org/wiki/index.php/Heredity" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+<div class="topic-card"><h3>Hovercraft</h3><a href="https://scioly.org/wiki/index.php/Hovercraft" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+<div class="topic-card"><h3>Machines</h3><a href="https://scioly.org/wiki/index.php/Machines" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+<div class="topic-card"><h3>Meteorology</h3><a href="https://scioly.org/wiki/index.php/Meteorology" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+<div class="topic-card"><h3>Metric Mastery</h3><a href="https://scioly.org/wiki/index.php/Metric_Mastery" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+<div class="topic-card"><h3>Mission Possible</h3><a href="https://scioly.org/wiki/index.php/Mission_Possible" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+<div class="topic-card"><h3>Potions & Poisons</h3><a href="https://scioly.org/wiki/index.php/Potions_and_Poisons" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+<div class="topic-card"><h3>Remote Sensing</h3><a href="https://scioly.org/wiki/index.php/Remote_Sensing" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+<div class="topic-card"><h3>Rocks & Minerals</h3><a href="https://scioly.org/wiki/index.php/Rocks_and_Minerals" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+<div class="topic-card"><h3>Scrambler</h3><a href="https://scioly.org/wiki/index.php/Scrambler" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+<div class="topic-card"><h3>Solar System</h3><a href="https://scioly.org/wiki/index.php/Solar_System" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+<div class="topic-card"><h3>Water Quality</h3><a href="https://scioly.org/wiki/index.php/Water_Quality" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+<div class="topic-card"><h3>Write It Do It</h3><a href="https://scioly.org/wiki/index.php/Write_It_Do_It" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
+
 </div>
 
 <div class="btn" onclick="showPage(1)">⬅ Back to Home</div>
@@ -226,12 +250,11 @@ body {
 </div>
 </div>
 
-<!-- SCRIPT -->
 <script>
 function showPage(page){
-    document.getElementById("page1").classList.remove("active");
-    document.getElementById("page2").classList.remove("active");
-    document.getElementById("page"+page).classList.add("active");
+document.getElementById("page1").classList.remove("active");
+document.getElementById("page2").classList.remove("active");
+document.getElementById("page"+page).classList.add("active");
 }
 </script>
 
