@@ -13,6 +13,7 @@ body {
     background: linear-gradient(to right, #fff7ed, #fde68a);
 }
 
+/* NAVBAR */
 .navbar {
     background: #1f2937;
     padding: 15px 40px;
@@ -27,6 +28,7 @@ body {
     cursor: pointer;
 }
 
+/* DROPDOWN */
 .dropdown { position: relative; }
 
 .dropdown-content {
@@ -46,10 +48,15 @@ body {
     text-decoration: none;
 }
 
+.dropdown-content a:hover {
+    background: #4a5568;
+}
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
+/* MAIN */
 .main {
     display: flex;
     padding: 50px 80px;
@@ -74,6 +81,7 @@ body {
     border-radius: 20px;
 }
 
+/* CARDS */
 .cards {
     display: flex;
     gap: 20px;
@@ -87,9 +95,10 @@ body {
     width: 250px;
 }
 
+/* BUTTON */
 .btn {
     margin-top: 20px;
-    padding: 10px;
+    padding: 10px 15px;
     background: #2563eb;
     color: white;
     border-radius: 8px;
@@ -97,6 +106,7 @@ body {
     display: inline-block;
 }
 
+/* TOPICS */
 .topics {
     padding: 50px 80px;
 }
@@ -114,8 +124,10 @@ body {
     width: 250px;
 }
 
+/* PAGES */
 .page { display: none; }
 .page.active { display: block; }
+
 </style>
 </head>
 
@@ -129,22 +141,22 @@ body {
     <div class="dropdown">
         <a>Science ▼</a>
         <div class="dropdown-content">
-            <a href="Olympiadmaterials/scienceRule.pdf" target="_blank">Science Rule Book</a>
-            <a href="Olympiadmaterials/grade6.docx" target="_blank">Grade 6 Questions</a>
+            <a href="scienceRule.pdf" target="_blank">Science Rule Book</a>
+            <a href="grade6.docx" target="_blank">Grade 6 Questions</a>
         </div>
     </div>
 
     <div class="dropdown">
         <a>Math ▼</a>
         <div class="dropdown-content">
-            <a href="Olympiadmaterials/math.pdf" target="_blank">Math Practice Set</a>
+            <a href="math.pdf" target="_blank">Math Practice Set</a>
         </div>
     </div>
 
     <div class="dropdown">
         <a>Reasoning ▼</a>
         <div class="dropdown-content">
-            <a href="Olympiadmaterials/reasoning.docx" target="_blank">Logical Reasoning</a>
+            <a href="reasoning.docx" target="_blank">Logical Reasoning</a>
         </div>
     </div>
 </div>
@@ -156,22 +168,22 @@ body {
 <div class="left">
 <h1>Welcome to Advik's Science and Math Olympiad Prep Site</h1>
 
-<p>Practice and prepare for Olympiad competitions.</p>
+<p>Practice and prepare for Science Olympiad, Math Olympiad, and Logical Reasoning competitions.</p>
 
 <div class="cards">
 
 <div class="card">
-<h3>Fun Science Videos</h3>
+<h3>Fun Science Videos 🔬</h3>
 <a href="https://www.youtube.com/ScienceOlympiadTV" target="_blank">Watch ▶</a>
 </div>
 
 <div class="card">
-<h3>Cool Science Facts</h3>
+<h3>Cool Science Facts 🚀</h3>
 <a href="https://quizlet.com/search?query=science%20olympiad&type=sets" target="_blank">Practice ▶</a>
 </div>
 
 <div class="card">
-<h3>SciOly Practice</h3>
+<h3>SciOly Practice 🧠</h3>
 <a href="https://scioly.org/tests/" target="_blank">Tests ▶</a>
 </div>
 
@@ -181,7 +193,7 @@ body {
 </div>
 
 <div class="right">
-<img src="Olympiadmaterials/advik.jpg">
+<img src="advik.jpg" alt="Advik Photo">
 </div>
 
 </div>
@@ -192,7 +204,7 @@ body {
 
 <div class="topics">
 
-<h2>Science Bowl Topics</h2>
+<h2>🚀 Science Bowl Topics</h2>
 
 <div class="topic-grid">
 <div class="topic-card"><h3>Biology</h3><a href="https://scioly.org/wiki/index.php/Biology" target="_blank">Study</a></div>
@@ -201,7 +213,7 @@ body {
 <div class="topic-card"><h3>Earth Science</h3><a href="https://scioly.org/wiki/index.php/Earth_science" target="_blank">Study</a></div>
 </div>
 
-<h2>Division B Events</h2>
+<h2>🧠 Division B Events</h2>
 
 <div class="topic-grid">
 <div class="topic-card"><h3>Anatomy</h3><a href="https://scioly.org/wiki/index.php/Anatomy" target="_blank">Study</a><a href="https://scioly.org/tests/" target="_blank">Tests</a></div>
@@ -214,6 +226,7 @@ body {
 </div>
 </div>
 
+<!-- SCRIPT -->
 <script>
 function showPage(page){
     document.getElementById("page1").classList.remove("active");
