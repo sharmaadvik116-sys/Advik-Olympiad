@@ -14,6 +14,7 @@ body {
     background: linear-gradient(to right, #fff7ed, #fde68a);
 }
 
+/* NAVBAR */
 .navbar {
     background: #1f2937;
     padding: 15px 40px;
@@ -27,7 +28,10 @@ body {
     font-weight: bold;
 }
 
-.dropdown { position: relative; }
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
 
 .dropdown-content {
     display: none;
@@ -46,22 +50,31 @@ body {
     text-decoration: none;
 }
 
-.dropdown-content a:hover { background: #4a5568; }
+.dropdown-content a:hover {
+    background: #4a5568;
+}
 
-.dropdown:hover .dropdown-content { display: block; }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
+/* MAIN */
 .main {
     display: flex;
     padding: 50px 80px 10px 80px;
 }
 
-.left { width: 50%; }
+/* LEFT */
+.left {
+    width: 50%;
+}
 
 .left h1 {
     color: #2563eb;
     font-size: 42px;
 }
 
+/* RIGHT IMAGE */
 .right {
     width: 50%;
     display: flex;
@@ -75,6 +88,7 @@ body {
     box-shadow: 0 15px 35px rgba(0,0,0,0.3);
 }
 
+/* CARDS */
 .cards {
     display: flex;
     gap: 20px;
@@ -90,7 +104,9 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-.card h3 { color: #2563eb; }
+.card h3 {
+    color: #2563eb;
+}
 
 .btn {
     display: block;
@@ -103,6 +119,7 @@ body {
     text-decoration: none;
 }
 
+/* TOPICS */
 .topics {
     padding: 0px 80px 40px 80px;
     margin-top: -20px;
@@ -127,7 +144,9 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-.topic-card h3 { color: #2563eb; }
+.topic-card h3 {
+    color: #2563eb;
+}
 
 .topic-card a {
     display: block;
@@ -136,13 +155,16 @@ body {
     color: #2563eb;
 }
 
-.topic-card a:hover { text-decoration: underline; }
+.topic-card a:hover {
+    text-decoration: underline;
+}
 
 </style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <div class="navbar">
     <a href="#">Home</a>
 
@@ -169,41 +191,49 @@ body {
     </div>
 </div>
 
+<!-- MAIN -->
 <div class="main">
 
-<div class="left">
-<h1>Welcome to Advik's Science and Math Olympiad Prep Site</h1>
+    <div class="left">
+        <h1>Welcome to Advik's Science and Math Olympiad Prep Site</h1>
 
-<p>
-Practice and prepare for Science Olympiad, Math Olympiad, and Logical Reasoning competitions.
-Explore curated resources and build confidence.
-</p>
+        <p>
+            Practice and prepare for Science Olympiad, Math Olympiad, and Logical Reasoning competitions.
+            Explore curated resources and build confidence.
+        </p>
 
-<div class="cards">
+        <div class="cards">
 
-<div class="card">
-<h3>Fun Science Videos 🔬</h3>
-<a class="btn" href="https://www.youtube.com/ScienceOlympiadTV" target="_blank">Watch Videos ▶</a>
+            <div class="card">
+                <h3>Fun Science Videos 🔬</h3>
+                <a class="btn" href="https://www.youtube.com/ScienceOlympiadTV" target="_blank">
+                    Watch Videos ▶
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Cool Science Facts 🚀</h3>
+                <a class="btn" href="https://quizlet.com/search?query=science%20olympiad&type=sets" target="_blank">
+                    Practice Quizlet ▶
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>SciOly Practice 🧠</h3>
+                <a class="btn" href="https://scioly.org/tests/" target="_blank">
+                    Practice Tests ▶
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ✅ ONLY FIXED LINE -->
+    <div class="right">
+      <img src="advik.jpg" alt="Advik Olympiad Learning">
+    </div>
+
 </div>
 
-<div class="card">
-<h3>Cool Science Facts 🚀</h3>
-<a class="btn" href="https://quizlet.com/search?query=science%20olympiad&type=sets" target="_blank">Practice Quizlet ▶</a>
-</div>
-
-<div class="card">
-<h3>SciOly Practice 🧠</h3>
-<a class="btn" href="https://scioly.org/tests/" target="_blank">Practice Tests ▶</a>
-</div>
-
-</div>
-</div>
-
-<!-- ✅ ONLY FIX -->
-<div class="right">
-  <img src="advik.jpg" alt="Advik Olympiad Learning">
-</div>
-
-</div>
-
-<!-- (REST OF YOUR ORIGINAL CODE REMAINS SAME — no change needed) -->
+<!-- REST OF YOUR ORIGINAL CODE (UNCHANGED) -->
