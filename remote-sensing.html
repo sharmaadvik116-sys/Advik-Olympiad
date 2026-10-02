@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Remote Sensing | Advik's Olympiad Prep</title>
 
 <style>
+
+/* =========================
+   GENERAL PAGE
+========================= */
 
 body {
     margin: 0;
@@ -15,11 +22,15 @@ body {
     color: #1f2937;
 }
 
-/* HEADER */
+
+/* =========================
+   HEADER
+========================= */
+
 .header {
     background: #1e3a8a;
     color: white;
-    padding: 40px 60px;
+    padding: 45px 60px;
 }
 
 .header h1 {
@@ -28,24 +39,32 @@ body {
 }
 
 .header p {
-    margin: 5px 0;
+    margin: 6px 0;
     font-size: 18px;
 }
 
-/* MAIN CONTAINER */
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
 .container {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 25px;
 }
 
-/* INTRO */
+
+/* =========================
+   INTRODUCTION
+========================= */
+
 .intro {
     background: white;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 .intro h2 {
@@ -53,20 +72,42 @@ body {
     margin-top: 0;
 }
 
-/* TOPICS */
+.intro p {
+    line-height: 1.7;
+}
+
+
+/* =========================
+   TOPIC TITLE
+========================= */
+
+.topics-title {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   TOPIC GRID
+========================= */
+
 .topic-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 25px;
 }
 
-/* TOPIC CARD */
+
+/* =========================
+   TOPIC CARDS
+========================= */
+
 .topic-card {
     background: white;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .topic-card:hover {
@@ -77,31 +118,43 @@ body {
 .topic-card h3 {
     color: #1e40af;
     margin-top: 0;
+    margin-bottom: 12px;
 }
 
 .topic-card p {
     line-height: 1.6;
     color: #4b5563;
+    min-height: 75px;
 }
+
+
+/* =========================
+   STUDY BUTTON
+========================= */
 
 .topic-card a {
     display: inline-block;
     margin-top: 10px;
-    padding: 10px 15px;
+    padding: 10px 16px;
     background: #2563eb;
     color: white;
     text-decoration: none;
     border-radius: 7px;
+    font-weight: bold;
 }
 
 .topic-card a:hover {
     background: #1d4ed8;
 }
 
-/* RESOURCES */
+
+/* =========================
+   RESOURCES
+========================= */
+
 .resources {
     background: white;
-    margin-top: 40px;
+    margin-top: 45px;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
@@ -109,13 +162,23 @@ body {
 
 .resources h2 {
     color: #1d4ed8;
+    margin-top: 0;
+}
+
+.resources p {
+    line-height: 1.7;
 }
 
 .resources a {
     color: #2563eb;
+    font-weight: bold;
 }
 
-/* BACK BUTTON */
+
+/* =========================
+   BACK BUTTON
+========================= */
+
 .back {
     display: inline-block;
     margin-top: 30px;
@@ -124,275 +187,379 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 8px;
+    font-weight: bold;
 }
 
 .back:hover {
     background: #111827;
 }
 
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 30px 25px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .topic-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
 </style>
+
 </head>
+
 
 <body>
 
-<!-- HEADER -->
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <div class="header">
 
-<h1>Remote Sensing</h1>
+    <h1>Remote Sensing</h1>
 
-<p>Science Olympiad Division B</p>
+    <p>Science Olympiad Division B</p>
 
-<p>Season 2026–2027</p>
+    <p>Season 2026–2027</p>
 
 </div>
 
+
+
+<!-- =========================
+     MAIN CONTENT
+========================= -->
 
 <div class="container">
 
 
-<!-- INTRODUCTION -->
+    <!-- INTRODUCTION -->
 
-<div class="intro">
+    <div class="intro">
 
-<h2>Remote Sensing Study Center</h2>
+        <h2>Remote Sensing Study Center</h2>
 
-<p>
-Remote sensing is the use of sensors to collect information about Earth
-without directly touching the object or area being studied.
-</p>
+        <p>
+            Remote sensing is the use of sensors to collect information
+            about Earth without directly touching the object or area
+            being studied.
+        </p>
 
-<p>
-For Science Olympiad, Advik will study remote sensing concepts, sensors,
-satellite orbits, image characteristics, mapping, measurements,
-image interpretation, Earth observation, land-cover classification,
-and environmental impacts.
-</p>
+        <p>
+            This study center organizes Advik's Remote Sensing
+            preparation into ten major topic areas.
+        </p>
+
+        <p>
+            Each topic will eventually have its own study page with
+            explanations, examples, equations, diagrams, and original
+            practice questions.
+        </p>
+
+    </div>
+
+
+
+    <!-- =========================
+         TOPICS
+    ========================= -->
+
+    <h2 class="topics-title">
+        Remote Sensing Topics
+    </h2>
+
+
+    <div class="topic-grid">
+
+
+        <!-- =========================
+             1. LIGHT
+        ========================= -->
+
+        <div class="topic-card">
+
+            <h3>Light & Remote Sensing</h3>
+
+            <p>
+                Properties of light, electromagnetic radiation,
+                reflection, refraction, absorption, scattering,
+                and important equations used in remote sensing.
+            </p>
+
+            <a href="light.html" target="_blank">
+                Study Topic →
+            </a>
+
+        </div>
+
+
+
+        <!-- =========================
+             2. SENSORS
+        ========================= -->
+
+        <div class="topic-card">
+
+            <h3>Sensors</h3>
+
+            <p>
+                Passive and active sensors, optical sensing,
+                radar, SAR, InSAR, radar altimetry, and
+                remote sensing instruments.
+            </p>
+
+            <a href="events/remote-sensing/topics/sensors/README.md"
+               target="_blank">
+                Study Topic →
+            </a>
+
+        </div>
+
+
+
+        <!-- =========================
+             3. SATELLITE ORBITS
+        ========================= -->
+
+        <div class="topic-card">
+
+            <h3>Satellite Orbits</h3>
+
+            <p>
+                Low Earth, medium Earth, high Earth, polar,
+                geostationary, and geosynchronous orbits,
+                including their purposes.
+            </p>
+
+            <a href="events/remote-sensing/topics/satellite-orbits/README.md"
+               target="_blank">
+                Study Topic →
+            </a>
+
+        </div>
+
+
+
+        <!-- =========================
+             4. IMAGE RESOLUTION
+        ========================= -->
+
+        <div class="topic-card">
+
+            <h3>Image Resolution</h3>
+
+            <p>
+                Spatial, temporal, spectral, and radiometric
+                resolution and how resolution affects remotely
+                sensed images.
+            </p>
+
+            <a href="events/remote-sensing/topics/image-resolution/README.md"
+               target="_blank">
+                Study Topic →
+            </a>
+
+        </div>
+
+
+
+        <!-- =========================
+             5. MAPPING
+        ========================= -->
+
+        <div class="topic-card">
+
+            <h3>Mapping Fundamentals</h3>
+
+            <p>
+                Topographic maps, satellite images, aerial
+                photographs, map information, scale, orientation,
+                legends, and image displays.
+            </p>
+
+            <a href="events/remote-sensing/topics/mapping-fundamentals/README.md"
+               target="_blank">
+                Study Topic →
+            </a>
+
+        </div>
+
+
+
+        <!-- =========================
+             6. MEASUREMENTS
+        ========================= -->
+
+        <div class="topic-card">
+
+            <h3>Measurements</h3>
+
+            <p>
+                Distance, perimeter, area, altitude, elevation,
+                slope, gradient, and measurements using map scale.
+            </p>
+
+            <a href="events/remote-sensing/topics/measurements/README.md"
+               target="_blank">
+                Study Topic →
+            </a>
+
+        </div>
+
+
+
+        <!-- =========================
+             7. IMAGE INTERPRETATION
+        ========================= -->
+
+        <div class="topic-card">
+
+            <h3>Image Interpretation</h3>
+
+            <p>
+                Natural color, false color, grayscale, thermal,
+                radar, elevation, contour, and classified map
+                displays.
+            </p>
+
+            <a href="events/remote-sensing/topics/image-interpretation/README.md"
+               target="_blank">
+                Study Topic →
+            </a>
+
+        </div>
+
+
+
+        <!-- =========================
+             8. EARTH OBSERVATION
+        ========================= -->
+
+        <div class="topic-card">
+
+            <h3>Earth Observation & Monitoring</h3>
+
+            <p>
+                Aerosols, albedo, surface temperature, reflectance,
+                vegetation changes, elevation changes, and
+                geohazards.
+            </p>
+
+            <a href="events/remote-sensing/topics/earth-observation/README.md"
+               target="_blank">
+                Study Topic →
+            </a>
+
+        </div>
+
+
+
+        <!-- =========================
+             9. LAND COVER
+        ========================= -->
+
+        <div class="topic-card">
+
+            <h3>Land Cover Classification</h3>
+
+            <p>
+                Supervised and unsupervised classification,
+                classification maps, land-cover change, and
+                land-cover monitoring.
+            </p>
+
+            <a href="events/remote-sensing/topics/land-cover-classification/README.md"
+               target="_blank">
+                Study Topic →
+            </a>
+
+        </div>
+
+
+
+        <!-- =========================
+             10. HUMAN & ENVIRONMENTAL IMPACTS
+        ========================= -->
+
+        <div class="topic-card">
+
+            <h3>Human & Environmental Impacts</h3>
+
+            <p>
+                Habitat loss, land-cover change, urbanization,
+                deforestation, and environmental damage assessment.
+            </p>
+
+            <a href="events/remote-sensing/topics/human-environmental-impacts/README.md"
+               target="_blank">
+                Study Topic →
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =========================
+         RESOURCES
+    ========================= -->
+
+    <div class="resources">
+
+        <h2>Study Resources</h2>
+
+        <p>
+            Use approved and permitted resources to prepare for
+            the Remote Sensing event.
+        </p>
+
+        <p>
+            NASA Earthdata provides additional information about
+            the fundamentals of remote sensing.
+        </p>
+
+        <a
+            href="https://www.earthdata.nasa.gov/learn/trainings/fundamentals-remote-sensing"
+            target="_blank"
+            rel="noopener noreferrer">
+            NASA Earthdata — Fundamentals of Remote Sensing
+        </a>
+
+    </div>
+
+
+
+    <!-- =========================
+         BACK TO HOME
+    ========================= -->
+
+    <a class="back" href="index.html">
+        ← Back to Home
+    </a>
+
 
 </div>
 
-
-<!-- TOPIC CARDS -->
-
-<h2>Remote Sensing Topics</h2>
-
-<div class="topic-grid">
-
-
-<!-- CARD 1 -->
-
-<div class="topic-card">
-
-<h3>Light & Remote Sensing</h3>
-
-<p>
-Properties of light, electromagnetic radiation, and important equations
-used in remote sensing.
-</p>
-
-<a href="light.html" target="_blank">
-Study Topic →
-</a>
-
-</div>
-
-
-<!-- CARD 2 -->
-
-<div class="topic-card">
-
-<h3>Sensors</h3>
-
-<p>
-Passive and active sensors, optical sensing, radar, SAR, and other
-remote sensing instruments.
-</p>
-
-<a href="events/remote-sensing/topics/sensors/README.md" target="_blank">
-Study Topic →
-</a>
-
-</div>
-
-
-<!-- CARD 3 -->
-
-<div class="topic-card">
-
-<h3>Satellite Orbits</h3>
-
-<p>
-LEO, MEO, high Earth, polar, geostationary, geosynchronous orbits,
-and their purposes.
-</p>
-
-<a href="events/remote-sensing/topics/satellite-orbits/README.md" target="_blank">
-Study Topic →
-</a>
-
-</div>
-
-
-<!-- CARD 4 -->
-
-<div class="topic-card">
-
-<h3>Image Resolution</h3>
-
-<p>
-Spatial, temporal, spectral, and radiometric resolution and how they
-affect remotely sensed images.
-</p>
-
-<a href="events/remote-sensing/topics/image-resolution/README.md" target="_blank">
-Study Topic →
-</a>
-
-</div>
-
-
-<!-- CARD 5 -->
-
-<div class="topic-card">
-
-<h3>Mapping Fundamentals</h3>
-
-<p>
-Topographic maps, satellite images, aerial photographs, map information,
-and image display methods.
-</p>
-
-<a href="events/remote-sensing/topics/mapping-fundamentals/README.md" target="_blank">
-Study Topic →
-</a>
-
-</div>
-
-
-<!-- CARD 6 -->
-
-<div class="topic-card">
-
-<h3>Measurements</h3>
-
-<p>
-Distance, perimeter, area, altitude, elevation, slope, gradient,
-and map scale.
-</p>
-
-<a href="events/remote-sensing/topics/measurements/README.md" target="_blank">
-Study Topic →
-</a>
-
-</div>
-
-
-<!-- CARD 7 -->
-
-<div class="topic-card">
-
-<h3>Image Interpretation</h3>
-
-<p>
-Natural color, false color, grayscale, thermal, radar, elevation,
-contour, and classified map displays.
-</p>
-
-<a href="events/remote-sensing/topics/image-interpretation/README.md" target="_blank">
-Study Topic →
-</a>
-
-</div>
-
-
-<!-- CARD 8 -->
-
-<div class="topic-card">
-
-<h3>Earth Observation & Monitoring</h3>
-
-<p>
-Aerosols, albedo, surface temperature, vegetation, elevation changes,
-and geohazards.
-</p>
-
-<a href="events/remote-sensing/topics/earth-observation/README.md" target="_blank">
-Study Topic →
-</a>
-
-</div>
-
-
-<!-- CARD 9 -->
-
-<div class="topic-card">
-
-<h3>Land Cover Classification</h3>
-
-<p>
-Supervised and unsupervised classification, land-cover maps,
-and land-cover change.
-</p>
-
-<a href="events/remote-sensing/topics/land-cover-classification/README.md" target="_blank">
-Study Topic →
-</a>
-
-</div>
-
-
-<!-- CARD 10 -->
-
-<div class="topic-card">
-
-<h3>Human & Environmental Impacts</h3>
-
-<p>
-Habitat loss, urbanization, deforestation, land-cover change,
-and damage assessment.
-</p>
-
-<a href="events/remote-sensing/topics/human-environmental-impacts/README.md" target="_blank">
-Study Topic →
-</a>
-
-</div>
-
-
-</div>
-
-
-<!-- RESOURCES -->
-
-<div class="resources">
-
-<h2>Study Resources</h2>
-
-<p>
-Use approved and permitted resources to prepare for the Remote Sensing event.
-</p>
-
-<p>
-NASA Earthdata provides additional information about the fundamentals
-of remote sensing.
-</p>
-
-<a href="https://www.earthdata.nasa.gov/learn/trainings/fundamentals-remote-sensing"
-target="_blank">
-NASA Earthdata — Fundamentals of Remote Sensing
-</a>
-
-</div>
-
-
-<!-- BACK -->
-
-<a class="back" href="index.html">
-← Back to Home
-</a>
-
-
-</div>
 
 </body>
+
 </html>
