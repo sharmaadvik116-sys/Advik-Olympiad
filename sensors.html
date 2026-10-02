@@ -1,1 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sensors | Advik's Remote Sensing Prep</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #eff6ff, #dbeafe);
+    color: #1f2937;
+}
+
+.header {
+    background: #1e3a8a;
+    color: white;
+    padding: 45px 60px;
+}
+
+.header h1 {
+    margin: 0 0 10px 0;
+    font-size: 42px;
+}
+
+.header p {
+    margin: 6px 0;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
+
+.section {
+    background: white;
+    margin-bottom: 25px;
+    padding: 28px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.section h2 {
+    color: #1d4ed8;
+    margin-top: 0;
+}
+
+.section h3 {
+    color: #1e40af;
+}
+
+.section p {
+    line-height: 1.7;
+}
+
+.section li {
+    line-height: 1.7;
+}
+
+.compare {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.compare th,
+.compare td {
+    border: 1px solid #d1d5db;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.compare th {
+    background: #dbeafe;
+    color: #1e3a8a;
+}
+
+.remember {
+    background: #fef3c7;
+    border-left: 5px solid #f59e0b;
+    padding: 15px;
+    margin-top: 18px;
+}
+
+.example {
+    background: #f8fafc;
+    border-left: 5px solid #64748b;
+    padding: 15px;
+    margin-top: 18px;
+}
+
+.question {
+    background: #f8fafc;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+.question strong {
+    color: #1e3a8a;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 12px 18px;
+    background: #1f2937;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.back:hover {
+    background: #111827;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+
+<div class="header">
+
+    <h1>Sensors</h1>
+
+    <p>Science Olympiad Division B — Remote Sensing</p>
+
+    <p>Season 2026–2027</p>
+
+</div>
+
+
+<div class="container">
+
+
+<!-- INTRODUCTION -->
+
+<div class="section">
+
+    <h2>What Is a Remote Sensing Sensor?</h2>
+
+    <p>
+        A remote sensing sensor detects electromagnetic radiation or other
+        signals from a target and records information that can be used to
+        study Earth's surface or atmosphere.
+    </p>
+
+    <p>
+        Sensors can be grouped into two major categories:
+        <strong>passive sensors</strong> and <strong>active sensors</strong>.
+    </p>
+
+    <div class="remember">
+
+        <strong>Key idea:</strong>
+
+        <p>
+            Passive sensors detect radiation that already exists.
+            Active sensors send out their own signal and measure the
+            response from the target.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- PASSIVE -->
+
+<div class="section">
+
+    <h2>Passive Sensors</h2>
+
+    <p>
+        Passive sensors measure naturally occurring electromagnetic
+        radiation. They do not need to transmit their own energy toward
+        the target.
+    </p>
+
+    <h3>Important Passive Sensing Ranges</h3>
+
+    <ul>
+
+        <li>Ultraviolet (UV)</li>
+
+        <li>Visible light</li>
+
+        <li>Near-infrared (NIR)</li>
+
+        <li>Shortwave infrared (SWIR)</li>
+
+        <li>Thermal infrared (TIR)</li>
+
+    </ul>
+
+    <div class="example">
+
+        <strong>Example:</strong>
+
+        <p>
+            An optical sensor can measure reflected sunlight from Earth's
+            surface. The amount of reflected radiation can vary between
+            vegetation, water, soil, and built surfaces.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- OPTICAL -->
+
+<div class="section">
+
+    <h2>Optical Sensors</h2>
+
+    <p>
+        Optical sensors detect electromagnetic radiation in wavelength
+        ranges that can provide information about the appearance and
+        properties of Earth's surface.
+    </p>
+
+    <p>
+        Multispectral optical systems can collect measurements in
+        multiple wavelength bands. Comparing those bands can help
+        distinguish different surface materials.
+    </p>
+
+    <div class="remember">
+
+        <strong>Remember:</strong>
+
+        <p>
+            Different materials interact with different wavelengths
+            differently. That difference can be used to identify or
+            classify features.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- THERMAL -->
+
+<div class="section">
+
+    <h2>Thermal Infrared Sensors</h2>
+
+    <p>
+        Thermal infrared sensors measure radiation associated with the
+        thermal state of surfaces.
+    </p>
+
+    <p>
+        Thermal measurements can be used to study differences in surface
+        temperature and thermal behavior.
+    </p>
+
+    <div class="example">
+
+        <strong>Example:</strong>
+
+        <p>
+            Two surfaces may have different temperatures even when they
+            receive similar sunlight. A thermal sensor can detect
+            differences in their emitted thermal radiation.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- ACTIVE -->
+
+<div class="section">
+
+    <h2>Active Sensors</h2>
+
+    <p>
+        Active sensors transmit their own signal toward a target and then
+        measure the returned signal.
+    </p>
+
+    <p>
+        Because the sensor supplies the signal, active sensing can operate
+        without depending entirely on naturally available illumination.
+    </p>
+
+    <h3>Important Active Sensor Types</h3>
+
+    <ul>
+
+        <li>Radar backscatter</li>
+
+        <li>Synthetic Aperture Radar (SAR)</li>
+
+        <li>Interferometric SAR (InSAR)</li>
+
+        <li>Radar altimetry</li>
+
+        <li>Radar-derived elevation products</li>
+
+    </ul>
+
+</div>
+
+
+<!-- RADAR -->
+
+<div class="section">
+
+    <h2>Radar</h2>
+
+    <p>
+        Radar uses electromagnetic waves to transmit energy toward a
+        target and detect the returned signal.
+    </p>
+
+    <p>
+        The returned signal can provide information about the surface,
+        including characteristics that affect the strength of the
+        returned signal.
+    </p>
+
+    <h3>Radar Backscatter</h3>
+
+    <p>
+        Radar backscatter refers to the portion of the transmitted radar
+        signal that is scattered back toward the sensor.
+    </p>
+
+    <div class="remember">
+
+        <strong>Think:</strong>
+
+        <p>
+            Stronger or weaker backscatter can provide information about
+            the interaction between radar energy and the surface.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- SAR -->
+
+<div class="section">
+
+    <h2>Synthetic Aperture Radar (SAR)</h2>
+
+    <p>
+        SAR is a radar imaging technique that uses the motion of the
+        sensor relative to the ground to produce detailed images.
+    </p>
+
+    <p>
+        SAR is an active sensing system and can collect data without
+        depending on sunlight in the same way optical sensors do.
+    </p>
+
+    <div class="remember">
+
+        <strong>Science Olympiad focus:</strong>
+
+        <p>
+            Know that SAR is an active radar imaging system and understand
+            the basic idea of radar backscatter and radar image
+            interpretation.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- INSAR -->
+
+<div class="section">
+
+    <h2>Interferometric SAR (InSAR)</h2>
+
+    <p>
+        InSAR uses information from radar observations to analyze
+        differences between radar measurements.
+    </p>
+
+    <p>
+        At the Science Olympiad level, focus on the basic interpretation
+        of how InSAR can be used to detect changes in Earth's surface.
+    </p>
+
+    <div class="example">
+
+        <strong>Example:</strong>
+
+        <p>
+            InSAR can be used to study surface deformation such as
+            changes in elevation or subsidence.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- RADAR ALTIMETRY -->
+
+<div class="section">
+
+    <h2>Radar Altimetry</h2>
+
+    <p>
+        Radar altimetry uses radar signals to measure the distance between
+        the sensor and a surface.
+    </p>
+
+    <p>
+        The measured range can be used to determine information about
+        surface elevation or height relative to a reference.
+    </p>
+
+    <div class="remember">
+
+        <strong>Important:</strong>
+
+        <p>
+            Radar altimetry is specifically included in the Remote
+            Sensing event scope, including the radar altimetry range
+            relationship.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- RADAR DERIVED ELEVATION -->
+
+<div class="section">
+
+    <h2>Radar-Derived Elevation Products</h2>
+
+    <p>
+        Radar observations can be processed to create information about
+        Earth's elevation and surface shape.
+    </p>
+
+    <p>
+        These elevation products can be useful for mapping terrain and
+        studying changes in the Earth's surface.
+    </p>
+
+</div>
+
+
+<!-- INSTRUMENTS -->
+
+<div class="section">
+
+    <h2>Remote Sensing Instruments</h2>
+
+    <p>
+        The Remote Sensing event includes several types of instruments
+        and systems.
+    </p>
+
+    <ul>
+
+        <li>Scanning systems</li>
+
+        <li>Multispectral imaging systems</li>
+
+        <li>Optical and infrared imagers</li>
+
+        <li>Radiometers</li>
+
+        <li>Radar altimeters</li>
+
+        <li>Thermal infrared imagers</li>
+
+        <li>Synthetic Aperture Radar (SAR) instruments</li>
+
+        <li>Digital Elevation Models (DEMs)</li>
+
+    </ul>
+
+</div>
+
+
+<!-- COMPARISON -->
+
+<div class="section">
+
+    <h2>Passive vs. Active Sensors</h2>
+
+    <table class="compare">
+
+        <tr>
+
+            <th>Feature</th>
+
+            <th>Passive Sensor</th>
+
+            <th>Active Sensor</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Energy source</td>
+
+            <td>
+                Detects naturally available radiation.
+            </td>
+
+            <td>
+                Transmits its own signal.
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>Examples</td>
+
+            <td>
+                Optical and thermal sensors.
+            </td>
+
+            <td>
+                Radar, SAR, InSAR, and radar altimetry.
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>Important concept</td>
+
+            <td>
+                Measures radiation already present.
+            </td>
+
+            <td>
+                Measures the response to a transmitted signal.
+            </td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+
+<!-- QUICK REVIEW -->
+
+<div class="section">
+
+    <h2>Science Olympiad Quick Review</h2>
+
+    <ul>
+
+        <li>
+            Passive sensors detect naturally occurring radiation.
+        </li>
+
+        <li>
+            Active sensors transmit their own signal.
+        </li>
+
+        <li>
+            Optical sensors can measure reflected electromagnetic
+            radiation.
+        </li>
+
+        <li>
+            Thermal infrared sensors measure thermal radiation.
+        </li>
+
+        <li>
+            Radar is an active sensing technique.
+        </li>
+
+        <li>
+            SAR is an active radar imaging system.
+        </li>
+
+        <li>
+            InSAR can be interpreted at a basic level for studying
+            surface changes.
+        </li>
+
+        <li>
+            Radar altimetry measures range between the sensor and a
+            surface.
+        </li>
+
+        <li>
+            Radar-derived elevation products provide information about
+            surface elevation.
+        </li>
+
+    </ul>
+
+</div>
+
+
+<!-- PRACTICE -->
+
+<div class="section">
+
+    <h2>Practice Questions</h2>
+
+
+    <div class="question">
+
+        <strong>
+            1. Which type of sensor transmits its own signal toward a
+            target?
+        </strong>
+
+        <p>A. Passive sensor</p>
+
+        <p>B. Active sensor</p>
+
+        <p>C. Optical-only sensor</p>
+
+        <p>D. Thermal-only sensor</p>
+
+    </div>
+
+
+    <div class="question">
+
+        <strong>
+            2. Which of the following is an example of an active sensing
+            technique?
+        </strong>
+
+        <p>A. Optical imaging</p>
+
+        <p>B. Thermal infrared sensing</p>
+
+        <p>C. SAR</p>
+
+        <p>D. Visible-light photography</p>
+
+    </div>
+
+
+    <div class="question">
+
+        <strong>
+            3. What does radar backscatter describe?
+        </strong>
+
+        <p>
+            A. Radiation absorbed by the atmosphere
+        </p>
+
+        <p>
+            B. Radar energy scattered back toward the sensor
+        </p>
+
+        <p>
+            C. The temperature of the sensor
+        </p>
+
+        <p>
+            D. The wavelength of visible light
+        </p>
+
+    </div>
+
+
+    <div class="question">
+
+        <strong>
+            4. Which technique uses radar observations to analyze changes
+            between measurements and can help study surface deformation?
+        </strong>
+
+        <p>A. InSAR</p>
+
+        <p>B. Visible imaging</p>
+
+        <p>C. Optical photography</p>
+
+        <p>D. Radiometry</p>
+
+    </div>
+
+
+    <div class="question">
+
+        <strong>
+            5. What is the main distinction between passive and active
+            remote sensing?
+        </strong>
+
+        <p>
+            A. Passive sensors use satellites and active sensors do not.
+        </p>
+
+        <p>
+            B. Passive sensors detect naturally available radiation,
+            while active sensors transmit their own signal.
+        </p>
+
+        <p>
+            C. Active sensors only detect visible light.
+        </p>
+
+        <p>
+            D. Passive sensors can only measure temperature.
+        </p>
+
+    </div>
+
+
+</div>
+
+
+<!-- BACK -->
+
+<a class="back" href="remote-sensing.html">
+    ← Back to Remote Sensing
+</a>
+
+
+</div>
+
+</body>
+
+</html>
